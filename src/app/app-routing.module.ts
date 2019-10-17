@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LandingPageComponent } from './landing-page/landing-page.component';
-import { InputTextPageComponent } from './input-text-page/input-text-page.component';
-import { ResultPageComponent } from './result-page/result-page.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { InputTextPageComponent } from './components/input-text-page/input-text-page.component';
+import { ResultPageComponent } from './components/result-page/result-page.component';
 
 const routes: Routes = [
   {
@@ -10,7 +10,7 @@ const routes: Routes = [
     component: LandingPageComponent
   },
   {
-    path: '/input-text',
+    path: 'input-text',
     component: InputTextPageComponent
   },
   {

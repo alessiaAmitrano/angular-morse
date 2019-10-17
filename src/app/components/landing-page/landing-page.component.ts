@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngxs/store';
+import { Navigate } from '@ngxs/router-plugin';
 
 @Component({
   selector: 'app-landing-page',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent implements OnInit {
+  constructor(private _store: Store) {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  onLandingClick() {
+    this._store.dispatch(new Navigate(['input-text']));
   }
-
 }
