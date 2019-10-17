@@ -2,4 +2,28 @@
   <img class="input-page__bkg-img"
        src="assets/background.png"
        alt="attractor image">
+
+  <div class="input-page__form">
+    <mat-form-field>
+      <!-- Input Field -->
+      <input matInput
+             id="input-text"
+             type="text"
+             name='message'
+             autocomplete="off"
+             [formControl]="form.get('message')">
+
+      <!-- Errors - Invalid Email -->
+      <!-- <mat-error
+                     *ngIf="emailControl.hasError('invalidText') && !emailControl.hasError('required')">
+            Invalid
+          </mat-error> -->
+
+      <!-- Errors - Required -->
+      <!-- <mat-error *ngIf="emailControl.hasError('required')">
+            Text
+            <strong>Required</strong>
+          </mat-error> -->
+    </mat-form-field>
+  </div>
 </section>
