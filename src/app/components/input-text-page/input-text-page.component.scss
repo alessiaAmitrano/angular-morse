@@ -3,5 +3,43 @@
 
   .input-page {
     height: inherit;
+
+    &__bkg-img {
+      z-index: 0;
+    }
+
+    &__form {
+      position: absolute;
+      top: 300px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      font-family: 'Courier New' !important;
+      font-size: 50px;
+
+      &-title {
+        color: white;
+        margin-bottom: 20px;
+      }
+
+      &-btn {
+        height: 80px;
+        width: 350px;
+        font-size: 50px;
+        color: white;
+        background-color: transparent;
+        font-family: 'Courier New' !important;
+        margin-top: 450px;
+        border: 5px solid white;
+        border-radius: 50px;
+      }
+    }
   }
+}
+
+::ng-deep mat-error {
+  margin-top: 20px;
 }

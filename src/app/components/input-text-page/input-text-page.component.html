@@ -4,26 +4,10 @@
        alt="attractor image">
 
   <div class="input-page__form">
-    <mat-form-field>
-      <!-- Input Field -->
-      <input matInput
-             id="input-text"
-             type="text"
-             name='message'
-             autocomplete="off"
-             [formControl]="form.get('message')">
+    <span class="input-page__form-title"> Enter your message</span>
 
-      <!-- Errors - Invalid Email -->
-      <!-- <mat-error
-                     *ngIf="emailControl.hasError('invalidText') && !emailControl.hasError('required')">
-            Invalid
-          </mat-error> -->
+    <app-input-form [messageControl]="form.get('message')"></app-input-form>
 
-      <!-- Errors - Required -->
-      <!-- <mat-error *ngIf="emailControl.hasError('required')">
-            Text
-            <strong>Required</strong>
-          </mat-error> -->
-    </mat-form-field>
+    <button class="input-page__form-btn">Translate</button>
   </div>
 </section>

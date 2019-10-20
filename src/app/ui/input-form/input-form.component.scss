@@ -1,0 +1,25 @@
+:host {
+  z-index: 2;
+  width: 1000px;
+  margin: 0 auto;
+  font-family: 'Courier New' !important;
+
+  ::ng-deep .mat-form-field {
+    height: 120px;
+
+    font-size: 50px;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+    display: block;
+    font-family: 'Courier New' !important;
+  }
+
+  ::ng-deep .mat-form-field-infix {
+    padding: 0;
+  }
+
+  ::ng-deep .mat-form-field-underline {
+    display: none;
+  }
+}
