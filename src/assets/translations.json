@@ -1,0 +1,146 @@
+{
+    "a": {
+        "morsecode": ".-",
+        "telephony": "alpha"
+    },
+    "b": {
+        "morsecode": "-...",
+        "telephony": "bravo"
+    },
+    "c": {
+        "morsecode": "-.-.",
+        "telephony": "charlie"
+    },
+    "d": {
+        "morsecode": "-..",
+        "telephony": "delta"
+    },
+    "e": {
+        "morsecode": ".",
+        "telephony": "echo"
+    },
+    "f": {
+        "morsecode": "..-.",
+        "telephony": "foxtrot"
+    },
+    "g": {
+        "morsecode": "--.",
+        "telephony": "golf"
+    },
+    "h": {
+        "morsecode": "....",
+        "telephony": "hotel"
+    },
+    "i": {
+        "morsecode": "..",
+        "telephony": "india"
+    },
+    "j": {
+        "morsecode": ".---",
+        "telephony": "juliett"
+    },
+    "k": {
+        "morsecode": "-.-",
+        "telephony": "kilo"
+    },
+    "l": {
+        "morsecode": ".-..",
+        "telephony": "lima"
+    },
+    "m": {
+        "morsecode": "--",
+        "telephony": "mike"
+    },
+    "n": {
+        "morsecode": "-.",
+        "telephony": "november"
+    },
+    "o": {
+        "morsecode": "---",
+        "telephony": "oscar"
+    },
+    "p": {
+        "morsecode": ".--.",
+        "telephony": "papa"
+    },
+    "q": {
+        "morsecode": "--.-",
+        "telephony": "quebec"
+    },
+    "r": {
+        "morsecode": ".-.",
+        "telephony": "romeo"
+    },
+    "s": {
+        "morsecode": "...",
+        "telephony": "sierra"
+    },
+    "t": {
+        "morsecode": "-",
+        "telephony": "tango"
+    },
+    "u": {
+        "morsecode": "..-",
+        "telephony": "uniform"
+    },
+    "v": {
+        "morsecode": "...-",
+        "telephony": "victor"
+    },
+    "w": {
+        "morsecode": ".--",
+        "telephony": "whiskey"
+    },
+    "x": {
+        "morsecode": "-..-",
+        "telephony": "xray"
+    },
+    "y": {
+        "morsecode": "-.--",
+        "telephony": "yankee"
+    },
+    "z": {
+        "morsecode": "--..",
+        "telephony": "zulu"
+    },
+    "0": {
+        "morsecode": "-----",
+        "telephony": "zero"
+    },
+    "1": {
+        "morsecode": ".----",
+        "telephony": "one"
+    },
+    "2": {
+        "morsecode": "..---",
+        "telephony": "two"
+    },
+    "3": {
+        "morsecode": "...--",
+        "telephony": "three"
+    },
+    "4": {
+        "morsecode": "....-",
+        "telephony": "four"
+    },
+    "5": {
+        "morsecode": ".....",
+        "telephony": "five"
+    },
+    "6": {
+        "morsecode": "-....",
+        "telephony": "six"
+    },
+    "7": {
+        "morsecode": "--...",
+        "telephony": "seven"
+    },
+    "8": {
+        "morsecode": "---..",
+        "telephony": "eight"
+    },
+    "9": {
+        "morsecode": "----.",
+        "telephony": "nine"
+    }
+}

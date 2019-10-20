@@ -1,10 +1,26 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { InputTextPageComponent } from './components/input-text-page/input-text-page.component';
+import { ResultPageComponent } from './components/result-page/result-page.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: LandingPageComponent
+  },
+  {
+    path: 'input-text',
+    component: InputTextPageComponent
+  },
+  {
+    path: 'results',
+    component: ResultPageComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

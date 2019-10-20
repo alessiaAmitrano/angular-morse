@@ -1,0 +1,22 @@
+<mat-form-field>
+  <!-- Input Field -->
+  <input matInput
+         id="input-text"
+         type="text"
+         name='message'
+         autocomplete="off"
+         maxlength="20"
+         [formControl]="messageControl">
+
+  <!-- Errors - Invalid Text -->
+  <mat-error
+             *ngIf="messageControl.hasError('invalidText') && !messageControl.hasError('required')">
+    Invalid Text
+  </mat-error>
+
+  <!-- Errors - Required -->
+  <mat-error *ngIf="messageControl.hasError('required')">
+    Text Required
+  </mat-error>
+</mat-form-field>
+<span>{{messageLength}}</span>
