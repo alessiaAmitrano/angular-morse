@@ -1,146 +1,150 @@
 {
-    "a": {
+  "data": [
+    {
+      "a": {
         "morsecode": ".-",
         "telephony": "alpha"
-    },
-    "b": {
+      },
+      "b": {
         "morsecode": "-...",
         "telephony": "bravo"
-    },
-    "c": {
+      },
+      "c": {
         "morsecode": "-.-.",
         "telephony": "charlie"
-    },
-    "d": {
+      },
+      "d": {
         "morsecode": "-..",
         "telephony": "delta"
-    },
-    "e": {
+      },
+      "e": {
         "morsecode": ".",
         "telephony": "echo"
-    },
-    "f": {
+      },
+      "f": {
         "morsecode": "..-.",
         "telephony": "foxtrot"
-    },
-    "g": {
+      },
+      "g": {
         "morsecode": "--.",
         "telephony": "golf"
-    },
-    "h": {
+      },
+      "h": {
         "morsecode": "....",
         "telephony": "hotel"
-    },
-    "i": {
+      },
+      "i": {
         "morsecode": "..",
         "telephony": "india"
-    },
-    "j": {
+      },
+      "j": {
         "morsecode": ".---",
         "telephony": "juliett"
-    },
-    "k": {
+      },
+      "k": {
         "morsecode": "-.-",
         "telephony": "kilo"
-    },
-    "l": {
+      },
+      "l": {
         "morsecode": ".-..",
         "telephony": "lima"
-    },
-    "m": {
+      },
+      "m": {
         "morsecode": "--",
         "telephony": "mike"
-    },
-    "n": {
+      },
+      "n": {
         "morsecode": "-.",
         "telephony": "november"
-    },
-    "o": {
+      },
+      "o": {
         "morsecode": "---",
         "telephony": "oscar"
-    },
-    "p": {
+      },
+      "p": {
         "morsecode": ".--.",
         "telephony": "papa"
-    },
-    "q": {
+      },
+      "q": {
         "morsecode": "--.-",
         "telephony": "quebec"
-    },
-    "r": {
+      },
+      "r": {
         "morsecode": ".-.",
         "telephony": "romeo"
-    },
-    "s": {
+      },
+      "s": {
         "morsecode": "...",
         "telephony": "sierra"
-    },
-    "t": {
+      },
+      "t": {
         "morsecode": "-",
         "telephony": "tango"
-    },
-    "u": {
+      },
+      "u": {
         "morsecode": "..-",
         "telephony": "uniform"
-    },
-    "v": {
+      },
+      "v": {
         "morsecode": "...-",
         "telephony": "victor"
-    },
-    "w": {
+      },
+      "w": {
         "morsecode": ".--",
         "telephony": "whiskey"
-    },
-    "x": {
+      },
+      "x": {
         "morsecode": "-..-",
         "telephony": "xray"
-    },
-    "y": {
+      },
+      "y": {
         "morsecode": "-.--",
         "telephony": "yankee"
-    },
-    "z": {
+      },
+      "z": {
         "morsecode": "--..",
         "telephony": "zulu"
-    },
-    "0": {
+      },
+      "0": {
         "morsecode": "-----",
         "telephony": "zero"
-    },
-    "1": {
+      },
+      "1": {
         "morsecode": ".----",
         "telephony": "one"
-    },
-    "2": {
+      },
+      "2": {
         "morsecode": "..---",
         "telephony": "two"
-    },
-    "3": {
+      },
+      "3": {
         "morsecode": "...--",
         "telephony": "three"
-    },
-    "4": {
+      },
+      "4": {
         "morsecode": "....-",
         "telephony": "four"
-    },
-    "5": {
+      },
+      "5": {
         "morsecode": ".....",
         "telephony": "five"
-    },
-    "6": {
+      },
+      "6": {
         "morsecode": "-....",
         "telephony": "six"
-    },
-    "7": {
+      },
+      "7": {
         "morsecode": "--...",
         "telephony": "seven"
-    },
-    "8": {
+      },
+      "8": {
         "morsecode": "---..",
         "telephony": "eight"
-    },
-    "9": {
+      },
+      "9": {
         "morsecode": "----.",
         "telephony": "nine"
+      }
     }
+  ]
 }
