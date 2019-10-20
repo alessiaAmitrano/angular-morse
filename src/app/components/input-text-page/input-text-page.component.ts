@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
 import {
   FormGroup,
   FormControl,
@@ -21,6 +21,11 @@ export class InputTextPageComponent implements OnInit {
     this.form = new FormGroup({
       message: new FormControl('', [Validators.required, this.isValidText])
     });
+  }
+
+  translate() {
+    let msg = this.form.get('message');
+    console.log('msg', msg);
   }
 
   private isValidText(control: FormControl): ValidationErrors {

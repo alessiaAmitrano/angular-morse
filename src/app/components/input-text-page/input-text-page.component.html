@@ -8,6 +8,9 @@
 
     <app-input-form [messageControl]="form.get('message')"></app-input-form>
 
-    <button class="input-page__form-btn">Translate</button>
+    <button class="input-page__form-btn"
+            [disabled]="this.form.get('message').status === 'INVALID'"
+            [ngClass]="this.form.get('message').status === 'INVALID' ? 'disabled': ''"
+            (click)="translate()">Translate</button>
   </div>
 </section>

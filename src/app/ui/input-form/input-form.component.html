@@ -5,6 +5,7 @@
          type="text"
          name='message'
          autocomplete="off"
+         maxlength="20"
          [formControl]="messageControl">
 
   <!-- Errors - Invalid Text -->
@@ -18,3 +19,4 @@
     Text Required
   </mat-error>
 </mat-form-field>
+<span>{{messageLength}}</span>

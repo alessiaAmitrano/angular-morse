@@ -35,9 +35,18 @@
         margin-top: 450px;
         border: 5px solid white;
         border-radius: 50px;
+        user-select: none;
+
+        &:focus {
+          outline: none;
+        }
       }
     }
   }
+}
+.disabled {
+  color: #808080 !important;
+  border-color: #808080 !important;
 }
 
 ::ng-deep mat-error {
