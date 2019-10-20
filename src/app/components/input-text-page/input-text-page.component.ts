@@ -25,7 +25,7 @@ export class InputTextPageComponent implements OnInit {
 
   translate() {
     let msg = this.form.get('message');
-    console.log('msg', msg);
+    console.log('msg', msg.value.length);
   }
 
   private isValidText(control: FormControl): ValidationErrors {

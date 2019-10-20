@@ -20,9 +20,10 @@
       font-family: 'Courier New' !important;
       font-size: 50px;
 
-      &-title {
+      &-title,
+      &-counter {
         color: white;
-        margin-bottom: 20px;
+        margin: 20px 0px;
       }
 
       &-btn {
@@ -32,7 +33,7 @@
         color: white;
         background-color: transparent;
         font-family: 'Courier New' !important;
-        margin-top: 450px;
+        margin-top: 370px;
         border: 5px solid white;
         border-radius: 50px;
         user-select: none;
@@ -47,8 +48,4 @@
 .disabled {
   color: #808080 !important;
   border-color: #808080 !important;
-}
-
-::ng-deep mat-error {
-  margin-top: 20px;
 }

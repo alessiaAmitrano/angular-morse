@@ -1,6 +1,7 @@
 <mat-form-field>
   <!-- Input Field -->
-  <input matInput
+  <input #msgInput
+         matInput
          id="input-text"
          type="text"
          name='message'
@@ -19,4 +20,3 @@
     Text Required
   </mat-error>
 </mat-form-field>
-<span>{{messageLength}}</span>
