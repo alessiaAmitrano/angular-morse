@@ -8,8 +8,10 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class TranslationService {
+  // tslint:disable-next-line: variable-name
   private _translationsUrl = 'http://localhost:3000/data';
 
+  // tslint:disable-next-line: variable-name
   constructor(private _http: HttpClient) {}
 
   getList(): Observable<any> {
