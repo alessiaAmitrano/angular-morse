@@ -1,4 +1,4 @@
-export class Translation {
-  morseCode: string;
+export interface MorseSymbol {
+  morseCode: any[];
   telephony: string;
 }

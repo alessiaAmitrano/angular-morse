@@ -15,6 +15,6 @@
     <button class="input-page__form-btn"
             [disabled]="this.form.get('message').errors"
             [ngClass]="this.form.get('message').errors ? 'disabled': ''"
-            (click)="translate()">Translate</button>
+            (click)="onTranslateClick()">Translate</button>
   </div>
 </section>

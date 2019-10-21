@@ -1,7 +1,7 @@
 export interface MorseStateModel {
   alphabet: any;
   inputText?: string;
-  morseText?: string;
+  morseText?: any[];
 }
 
 export const MORSE_INITIAL_STATE = {

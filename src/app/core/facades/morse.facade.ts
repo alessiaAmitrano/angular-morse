@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { TranslationService } from '../services/translation.service';
+import { MorseAlphabetService } from '../services/morse-alphabet.service';
 import { Select } from '@ngxs/store';
 import {
   MorseSelectors,
@@ -16,7 +16,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class MorseFacadeService {
-  constructor(private _tService: TranslationService) {}
+  constructor(private _alphabetService: MorseAlphabetService) {}
 
   @Select(MorseSelectors.getAlphabet)
   morseAlphabet$: Observable<any>;
@@ -25,11 +25,11 @@ export class MorseFacadeService {
   inputText$: Observable<string>;
 
   @Select(MorseSelectors.getMorseText)
-  morseText$: Observable<string>;
+  morseText$: Observable<any[]>;
 
   @Dispatch()
   getMorseAlphabet() {
-    return this._tService
+    return this._alphabetService
       .getList()
       .pipe(map(data => new GetMorseAlphabet(data)));
   }
@@ -38,7 +38,7 @@ export class MorseFacadeService {
   onSetInputText = (inputText: string) => new SetInputText(inputText);
 
   @Dispatch()
-  onSetMorseText = (morseText: string) => new SetMorseText(morseText);
+  onSetMorseText = (morseText: any[]) => new SetMorseText(morseText);
 
   @Dispatch()
   onResetInputs = () => new ResetInputs();

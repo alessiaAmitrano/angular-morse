@@ -14,7 +14,7 @@ export class MorseSelectors {
   }
 
   @Selector([MorseState])
-  static getMorseText(state: MorseStateModel): string {
+  static getMorseText(state: MorseStateModel): any[] {
     return state.morseText;
   }
 }

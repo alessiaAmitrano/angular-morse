@@ -10,7 +10,7 @@ export class SetInputText {
 
 export class SetMorseText {
   public static readonly type = '[Text] Set Morse Text';
-  constructor(public payload: string) {}
+  constructor(public payload: any[]) {}
 }
 
 export class ResetInputs {

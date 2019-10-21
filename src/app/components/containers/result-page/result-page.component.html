@@ -2,4 +2,13 @@
   <img class="results-page__bkg-img"
        src="assets/background.png"
        alt="attractor image">
+
+  <div class="results-page__text-area">
+    <span class="results-page__title"> This is my message</span>
+
+
+    <div *ngFor="let letter of morseText">
+      <span>{{letter.morseCode}}</span>
+    </div>
+  </div>
 </section>

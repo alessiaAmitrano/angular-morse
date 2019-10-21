@@ -1,22 +1,40 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { Translation } from '../models';
-import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
+import { MorseFacadeService } from '../facades/morse.facade';
+import { MorseSymbol } from '../models';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TranslationService {
-  // tslint:disable-next-line: variable-name
-  private _translationsUrl = 'http://localhost:3000/data';
+  constructor(private _morseFacade: MorseFacadeService) {}
 
-  // tslint:disable-next-line: variable-name
-  constructor(private _http: HttpClient) {}
+  translateToMorse(text: string, morseAlphabet: any): void {
+    const textArray = [...text];
+    let morseArray = [];
+    console.log(textArray);
+    morseArray = this.fillMorseArray(textArray, morseAlphabet, morseArray);
+    console.log(morseArray);
+    this._morseFacade.onSetMorseText(morseArray);
+  }
 
-  getList(): Observable<any> {
-    return this._http
-      .get<any>(this._translationsUrl)
-      .pipe(map(data => data[0]));
+  private fillMorseArray(
+    textArray: string[],
+    morseAlphabet: any,
+    morseArray: any[]
+  ): any[] {
+    textArray.forEach(letter => {
+      if (morseAlphabet[letter]) {
+        const morseLetter: MorseSymbol = {
+          morseCode: [...morseAlphabet[letter].morsecode],
+          telephony: morseAlphabet[letter].telephony
+        };
+        console.log(morseLetter);
+        morseArray.push(morseLetter);
+      } else {
+        const space = { morseCode: '', telephony: '' };
+        morseArray.push(space);
+      }
+    });
+    return morseArray;
   }
 }

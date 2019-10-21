@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslationService } from './core/services/translation.service';
 import { MorseFacadeService } from './core/facades/morse.facade';
 
 @Component({
