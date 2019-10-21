@@ -8,9 +8,13 @@
 
     <app-input-form [messageControl]="form.get('message')"></app-input-form>
 
+    <div class="input-page__form-counter">
+      (<span>{{form.get('message').value.length}}</span>/20)
+    </div>
+
     <button class="input-page__form-btn"
             [disabled]="this.form.get('message').errors"
             [ngClass]="this.form.get('message').errors ? 'disabled': ''"
-            (click)="translate()">Translate</button>
+            (click)="onTranslateClick()">Translate</button>
   </div>
 </section>

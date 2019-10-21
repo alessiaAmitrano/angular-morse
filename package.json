@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "server": "json-server --watch src/assets/translations.json"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +22,8 @@
     "@angular/platform-browser": "~8.0.0",
     "@angular/platform-browser-dynamic": "~8.0.0",
     "@angular/router": "~8.0.0",
+    "@ngxs-labs/dispatch-decorator": "^2.1.0",
+    "@ngxs-labs/select-snapshot": "^1.1.0",
     "@ngxs/router-plugin": "^3.5.1",
     "@ngxs/store": "^3.5.1",
     "hammerjs": "^2.0.8",

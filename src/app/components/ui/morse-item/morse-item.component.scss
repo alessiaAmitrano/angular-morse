@@ -1,0 +1,16 @@
+.morse-item {
+  display: flex;
+  flex-direction: column;
+
+  &__imgs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__telephony {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+  }
+}

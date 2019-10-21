@@ -1,4 +1,11 @@
-import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  OnChanges,
+  ViewChild,
+  ElementRef
+} from '@angular/core';
 import { FormControl } from '@angular/forms';
 
 @Component({
@@ -8,9 +15,11 @@ import { FormControl } from '@angular/forms';
 })
 export class InputFormComponent implements OnInit {
   @Input() messageControl: FormControl;
-  messageLength: number;
+  @ViewChild('msgInput', { static: true }) msgInput: ElementRef;
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.msgInput.nativeElement.focus();
+  }
 }

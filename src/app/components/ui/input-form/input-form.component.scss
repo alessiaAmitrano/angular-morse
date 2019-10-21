@@ -22,4 +22,8 @@
   ::ng-deep .mat-form-field-underline {
     display: none;
   }
+
+  ::ng-deep mat-error {
+    margin-top: 80px;
+  }
 }
