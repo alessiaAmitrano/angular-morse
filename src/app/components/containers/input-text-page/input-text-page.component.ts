@@ -1,4 +1,10 @@
-import { Component, OnInit, OnChanges, OnDestroy } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  OnChanges,
+  OnDestroy,
+  HostBinding
+} from '@angular/core';
 import {
   FormGroup,
   FormControl,
@@ -11,16 +17,20 @@ import { Store } from '@ngxs/store';
 import { Navigate } from '@ngxs/router-plugin';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { InputFadeAnimation } from '../../../animations/fade-animations';
 
 const az09regex = /^[A-Za-z0-9 ]+$/;
 @Component({
   selector: 'app-input-text-page',
   templateUrl: './input-text-page.component.html',
-  styleUrls: ['./input-text-page.component.scss']
+  styleUrls: ['./input-text-page.component.scss'],
+  animations: [InputFadeAnimation]
 })
 export class InputTextPageComponent implements OnInit, OnDestroy {
   form: FormGroup;
   morseAlphabet: any;
+  @HostBinding('@inputFadeTrigger')
+  public animateElements = true;
   private _destroyed$ = new Subject();
 
   constructor(

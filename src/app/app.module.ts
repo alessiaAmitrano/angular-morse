@@ -5,6 +5,8 @@ import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 import { NgxsRouterPluginModule } from '@ngxs/router-plugin';
 import { NgxsSelectSnapshotModule } from '@ngxs-labs/select-snapshot';
 import { NgxsDispatchPluginModule } from '@ngxs-labs/dispatch-decorator';
+import { NgIdleKeepaliveModule } from '@ng-idle/keepalive';
+import { MomentModule } from 'angular2-moment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './components/containers/landing-page/landing-page.component';
@@ -42,7 +44,9 @@ import { MorseItemComponent } from './components/ui/morse-item/morse-item.compon
     MaterialUiModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgIdleKeepaliveModule.forRoot(),
+    MomentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
