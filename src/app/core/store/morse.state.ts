@@ -50,6 +50,11 @@ export class MorseState {
 
   @Action(ResetInputs)
   resetInputs({ getState, setState }: StateContext<MorseStateModel>) {
-    setState(MORSE_INITIAL_STATE);
+    const state = getState();
+    setState({
+      ...state,
+      morseText: null,
+      inputText: null
+    });
   }
 }

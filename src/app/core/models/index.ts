@@ -1,1 +1,1 @@
-export * from './translation.model';
+export * from './morse-symbol.model';

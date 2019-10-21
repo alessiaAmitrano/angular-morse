@@ -9,12 +9,12 @@ import { MorseFacadeService } from './core/facades/morse.facade';
 export class AppComponent implements OnInit {
   morseAlphabet: object;
   // tslint:disable-next-line: variable-name
-  constructor(private _morseFacade: MorseFacadeService) {
+  constructor(private _morseFacade: MorseFacadeService) {}
+
+  ngOnInit() {
     this._morseFacade.getMorseAlphabet().subscribe(data => {
       this.morseAlphabet = data.payload;
       console.log(this.morseAlphabet);
     });
   }
-
-  ngOnInit() {}
 }

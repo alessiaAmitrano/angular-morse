@@ -17,6 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MorseState } from './core/store';
 import { environment } from 'src/environments/environment';
+import { MorseItemComponent } from './components/ui/morse-item/morse-item.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { environment } from 'src/environments/environment';
     LandingPageComponent,
     InputTextPageComponent,
     ResultPageComponent,
-    InputFormComponent
+    InputFormComponent,
+    MorseItemComponent
   ],
   imports: [
     BrowserModule,

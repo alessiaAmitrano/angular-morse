@@ -23,7 +23,7 @@ export class TranslationService {
     morseArray: any[]
   ): any[] {
     textArray.forEach(letter => {
-      if (morseAlphabet[letter]) {
+      if (letter !== ' ' && morseAlphabet[letter]) {
         const morseLetter: MorseSymbol = {
           morseCode: [...morseAlphabet[letter].morsecode],
           telephony: morseAlphabet[letter].telephony

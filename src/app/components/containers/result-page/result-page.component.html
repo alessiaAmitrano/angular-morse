@@ -8,8 +8,9 @@
 
 
     <div class="results-page__items-container">
-      <div *ngFor="let item of morseText"
-           style="width: 100px; height: 100px; border: 1px solid white"></div>
+      <app-morse-item *ngFor="let item of morseText"
+                      [morseSymbol]="item">
+      </app-morse-item>
     </div>
 
     <button class="results-page__restart-btn"
