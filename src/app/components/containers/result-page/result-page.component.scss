@@ -12,10 +12,9 @@
     &__text-area {
       z-index: 2;
       position: absolute;
-      top: 200px;
+      top: 150px;
       width: 100%;
       height: 800px;
-      border: 3px solid white;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -25,18 +24,21 @@
       font-weight: bold;
       font-size: 80px;
       color: white;
-      margin: 0 auto;
+      margin: 50px auto;
     }
 
     &__items-container {
+      width: 1500px;
+      margin: 0 auto;
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      flex-wrap: wrap;
+      justify-content: center;
       justify-items: center;
 
       app-morse-item {
         width: 200px;
-        height: 200px;
+        height: 150px;
         border: 3px solid black;
       }
     }
