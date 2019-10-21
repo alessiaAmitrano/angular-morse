@@ -1,18 +1,22 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, HostBinding } from '@angular/core';
 import { Store } from '@ngxs/store';
 import { MorseFacadeService } from 'src/app/core/facades/morse.facade';
 import { MorseSymbol } from 'src/app/core/models';
 import { Navigate } from '@ngxs/router-plugin';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { ResultsFadeAnimation } from 'src/app/animations/fade-animations';
 
 @Component({
   selector: 'app-result-page',
   templateUrl: './result-page.component.html',
-  styleUrls: ['./result-page.component.scss']
+  styleUrls: ['./result-page.component.scss'],
+  animations: [ResultsFadeAnimation]
 })
 export class ResultPageComponent implements OnInit, OnDestroy {
   morseText: MorseSymbol[];
+  @HostBinding('@resultsFadeTrigger')
+  public animateElements = true;
   private _destroyed$ = new Subject();
 
   constructor(private _store: Store, private _morseFacade: MorseFacadeService) {

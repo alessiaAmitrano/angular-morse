@@ -5,7 +5,8 @@ import {
   query,
   style,
   trigger,
-  transition
+  transition,
+  animateChild
 } from '@angular/animations';
 
 export const routerAnimation = trigger('routerAnimation', [
@@ -31,9 +32,13 @@ export function slideRoutes() {
       query(':leave', [animate('600ms 200ms ease', style({ right: '100%' }))], {
         optional: true
       }),
-      query(':enter', [animate('600ms 200ms ease', style({ right: '0%' }))], {
-        optional: true
-      })
+      query(
+        ':enter',
+        [animate('600ms 200ms ease', style({ right: '0%' })), animateChild()],
+        {
+          optional: true
+        }
+      )
     ])
   ];
 }

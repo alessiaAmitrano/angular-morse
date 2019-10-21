@@ -3,7 +3,8 @@
        src="assets/background.png"
        alt="attractor image">
 
-  <div class="input-page__form">
+  <div class="input-page__form"
+       [@inputFadeTrigger]>
     <span class="input-page__form-title"> Enter your message</span>
 
     <app-input-form [messageControl]="form.get('message')"></app-input-form>
