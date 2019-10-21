@@ -1,10 +1,29 @@
-# MorseCoder
+# MorseCoder by Alessia Amitrano
+
+This application converts the input string into it's morse equivalent and displays it.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
 
-## Development server
+## How to start the app
+
+First install the node modules with `npm i`.
+
+I used the json-server package in order to mock a database and perform a http request. To start the json-server you can use `json-server --watch src/assets/translations.json`. You can access the json-server navigating to `http://localhost:3000/`.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Styling
+
+I used SCSS for styling and the BEM pattern for class names.
+Even if the application is not supposed to be responsive, I used flexbox to make the positioning of the elements simpler.
+
+## Timeout
+
+The idle timeout has been developed using the package `ng-idle`.
+
+## Animations
+
+I have included some basic routing animations and fade animations for the elements inside each page.
 
 ## Code scaffolding
 
