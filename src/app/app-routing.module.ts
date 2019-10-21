@@ -7,15 +7,18 @@ import { ResultPageComponent } from './components/containers/result-page/result-
 const routes: Routes = [
   {
     path: '',
-    component: LandingPageComponent
+    component: LandingPageComponent,
+    data: { page: 'landing' }
   },
   {
     path: 'input-text',
-    component: InputTextPageComponent
+    component: InputTextPageComponent,
+    data: { page: 'input' }
   },
   {
     path: 'results',
-    component: ResultPageComponent
+    component: ResultPageComponent,
+    data: { page: 'result' }
   }
 ];
 

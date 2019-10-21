@@ -4,11 +4,14 @@ import { Idle, DEFAULT_INTERRUPTSOURCES } from '@ng-idle/core';
 import { Keepalive } from '@ng-idle/keepalive';
 import { Store } from '@ngxs/store';
 import { Navigate } from '@ngxs/router-plugin';
+import { RouterOutlet } from '@angular/router';
+import { routerAnimation } from './animations/routing-animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [routerAnimation]
 })
 export class AppComponent implements OnInit {
   idleState = 'Not started.';
@@ -64,6 +67,11 @@ export class AppComponent implements OnInit {
       this.morseAlphabet = data.payload;
       console.log(this.morseAlphabet);
     });
+  }
+
+  getPage(outlet: RouterOutlet) {
+    // tslint:disable-next-line: no-string-literal
+    return outlet.activatedRouteData['page'] || '';
   }
 
   reset() {
