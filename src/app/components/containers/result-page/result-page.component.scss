@@ -27,5 +27,29 @@
       color: white;
       margin: 0 auto;
     }
+
+    &__items-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      justify-items: center;
+    }
+
+    &__restart-btn {
+      height: 80px;
+      width: 350px;
+      font-size: 50px;
+      color: white;
+      background-color: transparent;
+      font-family: 'Courier New' !important;
+      border: 5px solid white;
+      border-radius: 50px;
+      user-select: none;
+      margin: 0 auto;
+
+      &:focus {
+        outline: none;
+      }
+    }
   }
 }

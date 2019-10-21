@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngxs/store';
 import { MorseFacadeService } from 'src/app/core/facades/morse.facade';
 import { MorseSymbol } from 'src/app/core/models';
+import { Navigate } from '@ngxs/router-plugin';
 
 @Component({
   selector: 'app-result-page',
@@ -19,4 +20,9 @@ export class ResultPageComponent implements OnInit {
   }
 
   ngOnInit() {}
+
+  onTryAgainClick() {
+    this._morseFacade.onResetInputs();
+    this._store.dispatch(new Navigate(['']));
+  }
 }

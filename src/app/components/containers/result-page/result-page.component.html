@@ -7,8 +7,12 @@
     <span class="results-page__title"> This is my message</span>
 
 
-    <div *ngFor="let letter of morseText">
-      <span>{{letter.morseCode}}</span>
+    <div class="results-page__items-container">
+      <div *ngFor="let item of morseText"
+           style="width: 100px; height: 100px; border: 1px solid white"></div>
     </div>
+
+    <button class="results-page__restart-btn"
+            (click)="onTryAgainClick()">Try Again</button>
   </div>
 </section>
