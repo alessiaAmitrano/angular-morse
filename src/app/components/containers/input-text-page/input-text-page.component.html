@@ -1,0 +1,21 @@
+<section class="input-page">
+  <img class="input-page__bkg-img"
+       src="assets/background.png"
+       alt="attractor image">
+
+  <div class="input-page__form"
+       [@inputFadeTrigger]>
+    <span class="input-page__form-title"> Enter your message</span>
+
+    <app-input-form [messageControl]="form.get('message')"></app-input-form>
+
+    <div class="input-page__form-counter">
+      (<span>{{form.get('message').value.length}}</span>/20)
+    </div>
+
+    <button class="input-page__form-btn"
+            [disabled]="this.form.get('message').errors"
+            [ngClass]="this.form.get('message').errors ? 'disabled': ''"
+            (click)="onTranslateClick()">Translate</button>
+  </div>
+</section>

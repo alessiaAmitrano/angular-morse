@@ -1,0 +1,20 @@
+<section class="results-page">
+  <img class="results-page__bkg-img"
+       src="assets/background.png"
+       alt="attractor image">
+
+  <div class="results-page__text-area"
+       [@resultsFadeTrigger]>
+    <span class="results-page__title"> This is my message</span>
+
+
+    <div class="results-page__items-container">
+      <app-morse-item *ngFor="let item of morseText"
+                      [morseSymbol]="item">
+      </app-morse-item>
+    </div>
+
+    <button class="results-page__restart-btn"
+            (click)="onTryAgainClick()">Try Again</button>
+  </div>
+</section>

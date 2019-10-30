@@ -1,0 +1,10 @@
+<section class="morse-item">
+  <div class="morse-item__imgs-container">
+    <div *ngFor="let item of morseSymbol.morseCode"
+         class="morse-item__img-container">
+      <img [src]="getImgSrc(item)"
+           [alt]="item">
+    </div>
+  </div>
+  <span class="morse-item__telephony">{{morseSymbol.telephony}}</span>
+</section>
