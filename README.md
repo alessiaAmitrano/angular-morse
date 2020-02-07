@@ -1,5 +1,7 @@
 # MorseCoder by Alessia Amitrano
 
+LIVE DEMO AT `https://alessiaamitrano.github.io/angular-morse/`
+
 This application converts the input string into it's morse equivalent and displays it.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
