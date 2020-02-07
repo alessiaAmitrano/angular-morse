@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "server": "json-server --watch src/assets/translations.json",
-    "githubpage": "ng build --outputPath=docs"
+    "githubpage": "ng build --outputPath=docs --base-href=https://alessiaamitrano.github.io/angular-morse/"
   },
   "private": true,
   "dependencies": {
